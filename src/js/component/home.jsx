@@ -7,7 +7,7 @@ const Home = () => {
 
 	const fetchTodos = () => {
 		fetch(`https://playground.4geeks.com/todo/users/dimatto404`)
-			.then((resp) => resp.json())
+			.then((response) => response.json())
 			.then((data) => {
 				console.log(data);
 				setTodos(data.todos);
